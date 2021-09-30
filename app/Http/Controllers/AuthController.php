@@ -36,8 +36,7 @@ class AuthController extends Controller
         return response()->json($user);
     }
 
-    public function dummyCallback(Response $response)
-    {
-        return view('welcome');
+    public function logout() {
+        Auth::logout();
     }
 }

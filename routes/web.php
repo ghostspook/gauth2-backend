@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::post('login', 'App\Http\Controllers\AuthController@socialLogin');
-Route::get('auth/callback', 'App\Http\Controllers\AuthController@dummyCallback');
+Route::get('logout', 'App\Http\Controllers\AuthController@logout');
